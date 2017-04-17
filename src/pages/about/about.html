@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="testing" color="primary">
+    <ion-segment-button value="friends" (ionSelect)="sem1()">
+      Sem 1
+    </ion-segment-button>
+    <ion-segment-button value="enemies" (ionSelect)="sem2()">
+      Sem 2
+    </ion-segment-button>
+  </ion-segment>
+
+  </ion-toolbar>
+</ion-content>
+

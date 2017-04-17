@@ -1,0 +1,60 @@
+<!--
+  Generated template for the Sem1 page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar hide-back-button="true">
+    <ion-title >sem2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="testing" color="primary">
+    <ion-segment-button value="friends" (ionSelect)="sem1()">
+      Sem 1
+    </ion-segment-button>
+    <ion-segment-button value="enemies" (ionSelect)="sem2()">
+      Sem 2
+    </ion-segment-button>
+  </ion-segment>
+
+  </ion-toolbar>
+<ion-list>
+  <h2>Welcome !</h2>
+    <ion-item *ngFor="let Infolist of sem2list | async">
+  <div class = "row">
+   <div class = "col col-50">Course</div>
+   <div class = "col">Title</div>
+</div>
+ <div class = "row">
+   <div class = "col col-50">  {{Infolist.course1}}</div>
+   <div class = "col"> {{Infolist.title1}}</div>
+</div>
+ <div class = "row">
+   <div class = "col col-50">  {{Infolist.course2}}</div>
+   <div class = "col"> {{Infolist.title2}}</div>
+</div>
+ <div class = "row">
+   <div class = "col col-50">  {{Infolist.course3}}</div>
+   <div class = "col"> {{Infolist.title3}}</div>
+</div>
+ <div class = "row">
+   <div class = "col col-50"> {{Infolist.course4}}</div>
+   <div class = "col"> {{Infolist.title4}}</div>
+</div>
+ <div class = "row">
+   <div class = "col col-50"> {{Infolist.course5}}</div>
+   <div class = "col"> {{Infolist.title5}}</div>
+</div>
+ 
+
+   </ion-item>
+   </ion-list>
+
+</ion-content>

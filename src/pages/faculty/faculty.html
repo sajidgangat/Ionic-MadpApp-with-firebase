@@ -1,0 +1,31 @@
+<!--
+  Generated template for the Faculty page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>faculty</ion-title>
+    <ion-buttons end>
+      <button (click)="addfaculty()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <ion-list>
+    <ion-list-header>Faculty</ion-list-header>
+    <ion-item *ngFor="let contact of facultylist | async">
+      <ion-icon name="book" danger item-left></ion-icon>
+      <h2>{{contact.name}}</h2>
+      <h3>Address: {{contact.address}}, {{contact.city}}</h3>
+      <p>Phone: {{contact.phone}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
