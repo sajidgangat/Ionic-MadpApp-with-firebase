@@ -1,0 +1,26 @@
+<!--
+  Generated template for the Addfaculty page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>TOM </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="add-contact back-front" >
+  <ion-item>
+    <ion-label stacked>Nmae of Student</ion-label>
+    <ion-input [(ngModel)]="name" type="text" placeholder="Your Name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Comment</ion-label>
+    <ion-input [(ngModel)]="comment" type="text" placeholder="Comment"></ion-input>
+  </ion-item>
+ 
+
+ 
+  <button block (click)="addcomment(name, comment)"> Comment </button>
+</ion-content>

@@ -10,23 +10,20 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="add-contact">
+<ion-content padding class="add-contact back-front" >
   <ion-item>
     <ion-label stacked>Name</ion-label>
     <ion-input [(ngModel)]="name" type="text" placeholder="Fill yor first and last name"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label stacked>Address</ion-label>
-    <ion-input [(ngModel)]="address" type="text" placeholder="Fill your full address"></ion-input>
+    <ion-input [(ngModel)]="email" type="text" placeholder="Fill your full email Address"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label stacked>Phone</ion-label>
-    <ion-input [(ngModel)]="phone" type="text" placeholder="Fill your phone number"></ion-input>
+    <ion-input [(ngModel)]="details" type="text" placeholder="Fill Professor details"></ion-input>
   </ion-item>
 
-  <ion-item>
-    <ion-label stacked>City</ion-label>
-    <ion-input [(ngModel)]="city" type="text" placeholder="Fill your city"></ion-input>
-  </ion-item>
-  <button block (click)="addfaculty(name, address, phone, city)"> Add Contact </button>
+ 
+  <button ion-button block (click)="addfaculty(name, email, details)"> Add Contact </button>
 </ion-content>

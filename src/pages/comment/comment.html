@@ -1,0 +1,38 @@
+<!--
+  Generated template for the Comment page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>COMMENTS OF STUDENTS</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="animate-fade-slide-in loader" >
+  <ion-list>
+ <ion-item *ngFor="let item of commentlist1 | async">
+<div class="item card-item">
+            <div ui-sref="" class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" style="background-image: url('img/1.png');"></span>
+                    <strong>Comment: <h5>{{item.comment}}</h5></strong>
+                     <div class="pull-left">
+                     </div>
+                      <div class="pull-left">
+                      </div>
+                    <div class="card-footer text-right">
+                      To: {{item.to}}
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> From: {{item.name}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </ion-item>
+ </ion-list>
+</ion-content>

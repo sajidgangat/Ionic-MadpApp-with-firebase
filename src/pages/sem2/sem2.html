@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content class="back-front">
   <ion-toolbar>
     <ion-segment [(ngModel)]="testing" color="primary">
     <ion-segment-button value="friends" (ionSelect)="sem1()">
@@ -26,7 +26,7 @@
 
   </ion-toolbar>
 <ion-list>
-  <h2>Welcome !</h2>
+  <h2>SEMESTER 2</h2>
     <ion-item *ngFor="let Infolist of sem2list | async">
   <div class = "row">
    <div class = "col col-50">Course</div>

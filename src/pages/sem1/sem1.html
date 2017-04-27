@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content class="back-front">
   <ion-toolbar>
     <ion-segment [(ngModel)]="testing" color="primary">
     <ion-segment-button value="friends" (ionSelect)="sem1()">
@@ -26,35 +26,49 @@
 
   </ion-toolbar>
 <ion-list>
-  <h2>Welcome !</h2>
+  <h2>SEMESTER 1 </h2> 
     <ion-item *ngFor="let new of sem1list | async">
       <div class = "row">
    <div class = "col col-50">Course</div>
    <div class = "col">Title</div>
 </div>
  <div class = "row">
-    <ion-segment-button value="enemies" (ionSelect)="android()">
+    <ion-segment-button value="enemies" (ionSelect)="web()">
      {{new.course1}}
     </ion-segment-button>
    <!--<div class = "col col-50"><a href=Android()>{{new.course1}}</a>  </div>-->
    <div class = "col"> {{new.title1}}</div>
 </div>
  <div class = "row">
-   <div class = "col col-50">  {{new.course2}}</div>
+    <ion-segment-button value="enemies" (ionSelect)="android()">
+     {{new.course2}}
+    </ion-segment-button>
+   <!--<div class = "col col-50"><a href=Android()>{{new.course1}}</a>  </div>-->
    <div class = "col"> {{new.title2}}</div>
 </div>
  <div class = "row">
-   <div class = "col col-50">  {{new.course3}}</div>
+    <ion-segment-button value="enemies" (ionSelect)="node()">
+     {{new.course3}}
+    </ion-segment-button>
+   <!--<div class = "col col-50"><a href=Android()>{{new.course1}}</a>  </div>-->
    <div class = "col"> {{new.title3}}</div>
 </div>
  <div class = "row">
-   <div class = "col col-50"> {{new.course4}}</div>
+    <ion-segment-button value="enemies" (ionSelect)="ios()">
+     {{new.course4}}
+    </ion-segment-button>
+   <!--<div class = "col col-50"><a href=Android()>{{new.course1}}</a>  </div>-->
    <div class = "col"> {{new.title4}}</div>
 </div>
  <div class = "row">
-   <div class = "col col-50"> {{new.course5}}</div>
+    <ion-segment-button value="enemies" (ionSelect)="ui()">
+     {{new.course5}}
+    </ion-segment-button>
+   <!--<div class = "col col-50"><a href=Android()>{{new.course1}}</a>  </div>-->
    <div class = "col"> {{new.title5}}</div>
 </div>
+
+
  
    </ion-item>
    </ion-list>

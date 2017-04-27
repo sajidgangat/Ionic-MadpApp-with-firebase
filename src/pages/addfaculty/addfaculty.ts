@@ -21,12 +21,11 @@ export class Addfaculty {
     this.facultylist = af.database.list('/faculty');
   }
 
-  addfaculty(name, address, phone, city) {
+  addfaculty(name, email, details) {
     this.facultylist.push({
       name: name,
-      address: address,
-      phone: phone,
-      city: city
+      email: email,
+      details: details
     }).then( newContact => {
       this.navCtrl.pop();
     }, error => {

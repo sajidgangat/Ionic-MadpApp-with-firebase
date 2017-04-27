@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Sem2Page } from '../sem2/sem2';
 import { Sem1androidPage } from '../sem1android/sem1android';
+import { Sem1uiPage } from '../sem1ui/sem1ui';
+import { Sem1nodejsPage } from '../sem1nodejs/sem1nodejs';
+import { Sem1iosPage } from '../sem1ios/sem1ios';
+import { Sem1webPage } from '../sem1web/sem1web';
+
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 /*
   Generated class for the Sem1 page.
@@ -22,6 +27,22 @@ sem1list: FirebaseListObservable<any>;
  android()
   {
      this.navCtrl.push(Sem1androidPage);
+  }
+  web()
+  {
+     this.navCtrl.push(Sem1webPage);
+  }
+  ios()
+  {
+     this.navCtrl.push(Sem1iosPage);
+  }
+  node()
+  {
+     this.navCtrl.push(Sem1nodejsPage);
+  }
+  ui()
+  {
+     this.navCtrl.push(Sem1uiPage);
   }
   sem1()
   {

@@ -16,7 +16,7 @@ export class Sem1androidPage {
   androidlist: FirebaseListObservable<any>;
   constructor(public navCtrl: NavController, public navParams: NavParams, public af: AngularFire) {
 
-    this.androidlist = af.database.list('/c1');
+    this.androidlist = af.database.list('/c2');
   }
 
 

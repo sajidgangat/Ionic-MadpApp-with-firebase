@@ -1,29 +1,67 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Mobile App Dev</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-list>
-  <h2>Welcome !</h2>
-    <ion-item *ngFor="let contact of Infolist | async">
-  <p>
-     {{contact.info1}}
-  </p>
-  <p>
-    {{contact.info2}}
-  </p>
 
-  <p>
-    {{contact.info3}}
-  </p>
+      <ion-content class="loader">
+ <ion-item *ngFor="let contact of Infolist | async">
+<section class = "home-container">
+ 
+<div class = "row header">
+ 
+<div class = "col text-center">
+             <img src="img/1.png">
+            </div>
+ 
+          </div>
+          <div class = "row icon-row">
+ 
+<div class = "col text-center">
+            
+ <h2>{{contact.info1}}</h2>
+            </div>
+ 
+ 
+<div class = "col text-center">
+             
+ {{contact.info2}}
+            </div>
+ 
+          </div>
+           <div class = "row icon-row">
+ 
+<div class = "col text-center">
+              
+<h2> {{contact.info3}}</h2>
+            </div>
+ 
+ 
+<div class = "col text-center">
+            
+ {{contact.info4}}
+            </div>
+ 
+          </div>
 
-  <p>
-    {{contact.info4}}
-  </p>
-   </ion-item>
-   </ion-list>
-</ion-content>
 
+           <div class = "row icon-row">
+ 
+<div class = "col text-center">
+              
+ {{contact.info5}}
+            </div>
+ 
+ 
+<div class = "col text-center">
+            
+ 
+            </div>
+ 
+          </div>
+ 
+</section>
 
+</ion-item>
+ </ion-content>

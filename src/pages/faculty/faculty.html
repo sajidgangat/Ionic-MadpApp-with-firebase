@@ -18,14 +18,27 @@
 </ion-header>
 
 
-<ion-content padding>
- <ion-list>
-    <ion-list-header>Faculty</ion-list-header>
-    <ion-item *ngFor="let contact of facultylist | async">
-      <ion-icon name="book" danger item-left></ion-icon>
-      <h2>{{contact.name}}</h2>
-      <h3>Address: {{contact.address}}, {{contact.city}}</h3>
-      <p>Phone: {{contact.phone}}</p>
-    </ion-item>
-  </ion-list>
+<ion-content class="back-front" >
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+ <ion-list >
+ <ion-item *ngFor="let item of facultylist | async">
+         <h4 class="content padding double-padding-x"></h4>
+        <div class="list animate-fade-slide-in-right back-front">
+         
+               <img src="{{item.img}}" />
+                <h2>{{item.name}}</h2>
+                <p> {{item.email}}</p>
+                <p> {{item.details}}</p>
+                 <ion-buttons>
+      <button ion-button block (click)="check(item.email)">
+        <ion-icon name="details">CLick To Comment</ion-icon>
+      </button>
+                </ion-buttons>
+               
+           
+       
+           
+        </div>
+         </ion-item>
+ </ion-list>
 </ion-content>

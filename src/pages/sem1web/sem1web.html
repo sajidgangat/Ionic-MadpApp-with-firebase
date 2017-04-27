@@ -1,0 +1,39 @@
+
+<ion-header >
+
+  <ion-navbar hide-back-button="true">
+    <ion-title >Android</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="back-front">
+ 
+<ion-list>
+  <h2>WEB !</h2>
+    <ion-item *ngFor="let WEB of androidlist | async">
+  <div class = "row">
+   <div class = "col col-50">Code</div>
+    <div class = "col col-50">  {{WEB.Code}}</div>
+    </div>
+    <div class = "row">
+   <div class = "col col-50">Availability</div>
+    <div class = "col col-50">  {{WEB.Availability}}</div>
+    </div>
+    <div class = "row">
+   <div class = "col col-50">Title</div>
+    <div class = "col col-50">  {{WEB.title}}</div>
+    </div>
+    <div>
+   <div class = "col col-50">Description</div>
+    <p>  {{WEB.Description}}</p>
+    </div>
+  
+
+ 
+
+   </ion-item>
+   </ion-list>
+
+</ion-content>

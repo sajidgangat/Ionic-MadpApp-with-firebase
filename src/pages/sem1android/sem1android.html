@@ -8,35 +8,29 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content class="back-front">
  
 <ion-list>
-  <h2>Welcome !</h2>
+  <h2>Android !</h2>
     <ion-item *ngFor="let android of androidlist | async">
   <div class = "row">
    <div class = "col col-50">Code</div>
-   <div class = "col">Availability</div>
-</div>
- <div class = "row">
-   <div class = "col col-50">  {{android.Code}}</div>
-   <div class = "col"> {{android.Availability}}</div>
-</div>
- <div class = "row">
-   <div class = "col col-50">  {{android.Code}}</div>
-   <div class = "col"> {{android.Availability}}</div>
-</div>
- <div class = "row">
-   <div class = "col col-50">  {{android.Code}}</div>
-   <div class = "col"> {{android.Availability}}</div>
-</div>
- <div class = "row">
-   <div class = "col col-50"> {{android.Code}}</div>
-   <div class = "col"> {{android.Availability}}</div>
-</div>
- <div class = "row">
-   <div class = "col col-50"> {{android.Code}}</div>
-   <div class = "col"> {{android.Availability}}</div>
-</div>
+    <div class = "col col-50">  {{android.Code}}</div>
+    </div>
+    <div class = "row">
+   <div class = "col col-50">Availability</div>
+    <div class = "col col-50">  {{android.Availability}}</div>
+    </div>
+    <div class = "row">
+   <div class = "col col-50">Title</div>
+    <div class = "col col-50">  {{android.title}}</div>
+    </div>
+    <div>
+   <div class = "col col-50">Description</div>
+    <p>  {{android.Description}}</p>
+    </div>
+  
+
  
 
    </ion-item>
